@@ -1,22 +1,31 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { newLinkBtn } from "@/app/lib/utils";
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
-  const products = [
-    { name: "Courses", path: "/" },
-    { name: "Blogs", path: "/" },
-  ];
+  const products = [{ name: "Courses", path: "/" }];
 
   const resources = [
-    { name: "Privacy", path: "/" },
-    { name: "Terms", path: "/" },
-    { name: "Contact", path: "/" },
+    { name: "Privacy", path: "/privacy" },
+    { name: "Terms", path: "/terms" },
+    { name: "Contact", path: "/contact" },
+  ];
+
+  const developers = [
+    {
+      src: "/icons/github.svg",
+      alt: "github",
+      bLink: "https://github.com/Sarvpreet104/codeSarv",
+      height: 30,
+      width: 30,
+    },
   ];
 
   return (
-    <footer className="bg-[var(--ele-bg-color)] border-t-2 border-[var(--border-color)] w-full px-4 py-10 lg:py-16 text-[var(--primary-color)]">
+    <footer className="bg-[var(--ele-bg-color)] border-t-2 border-[var(--border-color)] w-full px-4 py-10 lg:py-16 text-[var(--primary-color)] mt-12">
       <div className="flex flex-col lg:flex-row lg:justify-between gap-6 lg:gap-4 w-full lg:w-[70%] mx-auto">
         {/* branding */}
         <div className="flex flex-row gap-2 items-center lg:items-start lg:flex-col">
@@ -68,14 +77,22 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <div className="font-semibold text-lg">Developers</div>
             <div>
-              <div className="flex flex-wrap gap-4">
-                <Image
-                  src={"/github.svg"}
-                  alt="github"
-                  width={30}
-                  height={30}
-                  className="invert hover:invert-75 cursor-pointer transition-all duration-300"
-                />
+              <div className="flex flex-wrap gap-4 max-w-24">
+                {developers.map((value) => {
+                  return (
+                    <Image
+                      src={value.src}
+                      alt={value.alt}
+                      width={value.width}
+                      height={value.height}
+                      key={value.bLink}
+                      className="invert hover:invert-75 cursor-pointer transition-all duration-300"
+                      onClick={() => {
+                        newLinkBtn(value.bLink);
+                      }}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>

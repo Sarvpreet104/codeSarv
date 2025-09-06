@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 /* styles/globals.css */
-
 :root {
   --bg-color: #0e1a1a;
   --ele-bg-color: #1f2e2e;
@@ -10,6 +9,8 @@
   --accent-color: #3eb489;
   --highlight-color: #56cbaf;
   --border-color: #2e3e3e;
+
+  --check-list: "✔️";
 }
 
 ::selection {
@@ -21,4 +22,40 @@
 body {
   background-color: var(--bg-color);
   color: var(--primary-color);
+}
+
+.myContainer {
+  @apply w-full lg:w-[70%] px-4 mx-auto;
+}
+
+section {
+  @apply my-10;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold my-8;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold my-6;
+}
+
+.heading3 {
+  @apply text-2xl font-semibold my-4;
+}
+
+p {
+  @apply text-base lg:text-lg my-2;
+}
+
+.subP {
+  @apply text-base my-0;
+}
+
+.myList {
+  @apply list-inside pl-4 text-base lg:text-lg;
+}
+
+.myList li span {
+  @apply pl-2;
 }

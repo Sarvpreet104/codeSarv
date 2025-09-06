@@ -9,11 +9,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const myLinks = [
-    { name: "Courses", path: "/" },
-    { name: "About", path: "/" },
-    { name: "Contact", path: "/" },
-    { name: "Privacy", path: "/" },
-    { name: "Terms", path: "/" },
+    { name: "Courses", path: "/courses" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+    { name: "Privacy", path: "/privacy" },
+    { name: "Terms", path: "/terms" },
   ];
 
   return (
@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Right Side Buttons */}
           <div className="flex gap-2">
             <button className="cursor-pointer lg:block hidden">Log in</button>
-            <PrimaryButton name={"Sign up"} />
+            <PrimaryButton name={"Sign up"} bLink="/" />
 
             {/* Mobile Menu Button */}
             <button
@@ -55,7 +55,7 @@ const Navbar = () => {
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <Image
-                src={menuOpen ? "/close2.svg" : "/menu.svg"}
+                src={menuOpen ? "/icons/close2.svg" : "/icons/menu.svg"}
                 alt="menu"
                 width={24}
                 height={24}
