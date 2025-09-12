@@ -127,7 +127,7 @@ const page = () => {
         </section>
 
         <section>
-          <h2>Children's Privacy</h2>
+          <h2>Children&apos;s Privacy</h2>
           <p>
             Our content is intended for individuals over the age of 13. We do
             not knowingly collect personal information from children.

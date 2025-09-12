@@ -49,7 +49,7 @@ const page = () => {
                 fun and free.
               </p>
               <p>
-                And, I believe today's world need to learn coding in most
+                And, I believe today&apos;s world need to learn coding in most
                 efficient way without going through the beginner stuggle of
                 starting. As, this skill have become very basic. And, the future
                 tech geniuses should not worry about the learning part and focus
