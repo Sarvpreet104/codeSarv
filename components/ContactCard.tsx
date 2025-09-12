@@ -1,4 +1,4 @@
-import PrimaryButton from "@/app/ui/PrimaryButton";
+import PrimaryButton from "./PrimaryButton";
 
 const ContactCard = () => {
   return (

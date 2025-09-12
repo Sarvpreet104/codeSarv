@@ -1,5 +1,5 @@
-import SocialCard from "@/app/ui/SocialCard";
-import PrimaryButton from "@/app/ui/PrimaryButton";
+import SocialCard from "@/components/SocialCard";
+import PrimaryButton from "@/components/PrimaryButton";
 
 const page = () => {
   return (

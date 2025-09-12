@@ -1,69 +1,47 @@
-import Card from "@/app/ui/Card";
+import Card from "@/components/Card";
 
 const page = () => {
-  const myCourses = [
+  const courses = [
     {
       id: 1,
       title: `Python for absolute beginners: Zero to Hero`,
       desc: `This python course is made for absolute beginners, all the basics are
             covered. It progress to advance level python skills which are
-            essential today and in near future.`,
+            essential today and in the near future.`,
       src: `/courses/python.png`,
       alt: `python`,
       vwidth: 1024,
       vheight: 576,
-    },
-    {
-      id: 2,
-      title: `Python for absolute beginners: Zero to Hero`,
-      desc: `This python course is made for absolute beginners, all the basics are
-            covered.`,
-      src: `/courses/python.png`,
-      alt: `python`,
-      vwidth: 1024,
-      vheight: 576,
-    },
-    {
-      id: 3,
-      title: `Python Advance`,
-      desc: `This python course is made for absolute beginners, all the basics are
-            covered. It progress to advance level python skills which are
-            essential today and in near future.`,
-      src: `/courses/python.png`,
-      alt: `python`,
-      vwidth: 1024,
-      vheight: 576,
+      bLink: "/courses/python",
     },
   ];
 
   return (
-    <>
-      <main className="myContainer">
-        <section>
-          <h2 className="text-center">Our Courses, Enroll now!</h2>
-          <p className="text-center subP">
-            You are welcome to enroll in any course you like.
-          </p>
+    <main className="myContainer">
+      <section>
+        <h1 className="text-center">Our Courses</h1>
+        <p className="text-center">Enroll in a course today!</p>
+      </section>
 
-          <div className="flex gap-4 w-fit mx-auto my-12 flex-wrap justify-cente">
-            {myCourses.map((value) => {
-              return (
-                <Card
-                  title={value.title}
-                  desc={value.desc}
-                  src={value.src}
-                  alt={value.alt}
-                  iwidth={value.vwidth}
-                  iheight={value.vheight}
-                  bLink="/"
-                  key={value.id}
-                />
-              );
-            })}
-          </div>
-        </section>
-      </main>
-    </>
+      <section>
+        <div className="flex gap-4 w-fit mx-auto my-12 flex-wrap justify-center">
+          {courses.map((value) => {
+            return (
+              <Card
+                title={value.title}
+                desc={value.desc}
+                src={value.src}
+                alt={value.alt}
+                iwidth={value.vwidth}
+                iheight={value.vheight}
+                bLink={value.bLink}
+                key={value.id}
+              />
+            );
+          })}
+        </div>
+      </section>
+    </main>
   );
 };
 

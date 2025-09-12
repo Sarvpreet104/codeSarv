@@ -20,7 +20,7 @@ const page = () => {
 
         <section>
           <h2>Use of Website</h2>
-          <ul className="myList list-disc">
+          <ul className="">
             <li>You must be at least 13 years old to use this website.</li>
             <li>You agree not to use the site for any unlawful purpose.</li>
             <li>
@@ -32,7 +32,7 @@ const page = () => {
 
         <section>
           <h2>Content & Intellectual Property</h2>
-          <ul className="myList list-disc">
+          <ul className="">
             <li>
               All content on codesarv.com (text, images, code examples, etc.) is
               owned by us or licensed to us.
@@ -49,7 +49,7 @@ const page = () => {
 
         <section>
           <h2>Disclaimer</h2>
-          <ul className="myList list-disc">
+          <ul className="">
             <li>The content provided is for educational purposes only.</li>
             <li>
               We make no guarantees of accuracy, completeness, or usefulness.
@@ -73,7 +73,7 @@ const page = () => {
         <section>
           <h2>Advertisements</h2>
 
-          <ul className="myList list-disc">
+          <ul className="">
             <li>
               We may display ads from third-party providers (such as Google
               AdSense).
@@ -88,7 +88,7 @@ const page = () => {
             To the maximum extent permitted by law, codesarv.com shall not be
             liable for:
           </p>
-          <ul className="myList list-disc">
+          <ul className="">
             <li>Any indirect, incidental, or consequential damages</li>
             <li>
               Loss of data, revenue, or business arising from your use of the

@@ -22,10 +22,10 @@ const page = () => {
         <section>
           <h2>Information We Collect</h2>
           <p>We may collect the following types of information:</p>
-          <ol className="myList list-decimal font-bold">
+          <ol className="font-bold">
             <li className="my-2">
               Personal Information:
-              <ul className="myList list-disc font-normal">
+              <ul className="font-normal">
                 <li>Name</li>
                 <li>Email address</li>
                 <li>Contact details</li>
@@ -34,7 +34,7 @@ const page = () => {
 
             <li className="my-2">
               Non-Personal Information:
-              <ul className="myList list-disc font-normal">
+              <ul className="font-normal">
                 <li>Browser type</li>
                 <li>Device information</li>
                 <li>Pages visited</li>
@@ -44,7 +44,7 @@ const page = () => {
 
             <li className="my-2">
               Cookies and Tracking Technologies:
-              <ul className="myList list-disc font-normal">
+              <ul className="font-normal">
                 <li>
                   We use cookies to improve user experience and analyze website
                   traffic.
@@ -63,7 +63,7 @@ const page = () => {
 
           <p>We may use your information to:</p>
 
-          <ul className="myList list-disc">
+          <ul className="list-disc">
             <li>Provide and improve our content</li>
             <li>Respond to inquiries or feedback</li>
             <li>Personalize your experience</li>
@@ -75,7 +75,7 @@ const page = () => {
         <section>
           <h2>Third-Party Services</h2>
           <p>We may use third-party tools such as:</p>
-          <ul className="myList list-disc">
+          <ul className="">
             <li>Google AdSense — for displaying ads</li>
             <li>Google Analytics — for tracking website performance</li>
           </ul>
@@ -84,7 +84,7 @@ const page = () => {
             and may set cookies.
           </p>
           <p>For more details, visit:</p>
-          <ul className="myList list-disc">
+          <ul className="">
             <li>
               <Link
                 href={"https://policies.google.com/privacy"}

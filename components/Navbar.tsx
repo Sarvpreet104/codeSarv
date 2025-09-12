@@ -3,10 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import PrimaryButton from "@/app/ui/PrimaryButton";
+import SignIn from "@/components/sign-in";
+import { SignOut } from "@/components/sign-out";
+import { useSession } from "next-auth/react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { data: session } = useSession();
 
   const myLinks = [
     { name: "Courses", path: "/courses" },
@@ -31,7 +34,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Links */}
-          <ul className="lg:flex lg:gap-6 hidden">
+          <ul className="lg:flex lg:gap-6 hidden myList">
             {myLinks.map((value) => (
               <li key={value.name}>
                 <Link
@@ -46,9 +49,8 @@ const Navbar = () => {
 
           {/* Right Side Buttons */}
           <div className="flex gap-2">
-            <button className="cursor-pointer lg:block hidden">Log in</button>
-            <PrimaryButton name={"Sign up"} bLink="/" />
-
+            {/* auth */}
+            {session ? <SignOut /> : <SignIn />}
             {/* Mobile Menu Button */}
             <button
               className="cursor-pointer block lg:hidden rounded-full"

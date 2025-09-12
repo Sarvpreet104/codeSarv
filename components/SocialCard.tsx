@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { newLinkBtn } from "@/app/lib/utils";
+import { newLinkBtn } from "@/libs/utils";
 
 const SocialCard = () => {
   const icon_width = 35;

@@ -1,0 +1,32 @@
+"use client";
+import Link from "next/link";
+
+const CourseSidebar = ({
+  course,
+  lessons,
+}: {
+  course: string;
+  lessons: string[];
+}) => {
+  return (
+    <aside className="w-70 bg-[var(--ele-bg-color)] border-r-2 rounded-lg overflow-hidden border-[var(--border-color)] px-2 hidden lg:flex flex-col">
+      <h3 className="text-xl font-semibold my-2 px-2">
+        {course.toUpperCase()}
+      </h3>
+      {lessons.map((file) => {
+        const slug = file.replace(".md", "");
+        return (
+          <Link
+            href={`/courses/${course}/lessons/${slug}`}
+            key={slug}
+            className="text-lg capitalize hover:bg-[var(--accent-color)] px-4 py-2 hover:text-[var(--bg-color)] active:bg-[var(--highlight-color)]"
+          >
+            {slug.replace(/^\d+[-_]/, "").replace(/-/g, " ")}
+          </Link>
+        );
+      })}
+    </aside>
+  );
+};
+
+export default CourseSidebar;

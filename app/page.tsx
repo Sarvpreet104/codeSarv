@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Card from "@/app/ui/Card";
+import Card from "@/components/Card";
 
 export default function Home() {
   const top_courses = [
@@ -13,27 +13,7 @@ export default function Home() {
       alt: `python`,
       vwidth: 1024,
       vheight: 576,
-    },
-    {
-      id: 2,
-      title: `Python for absolute beginners: Zero to Hero`,
-      desc: `This python course is made for absolute beginners, all the basics are
-            covered.`,
-      src: `/courses/python.png`,
-      alt: `python`,
-      vwidth: 1024,
-      vheight: 576,
-    },
-    {
-      id: 3,
-      title: `Python Advance`,
-      desc: `This python course is made for absolute beginners, all the basics are
-            covered. It progress to advance level python skills which are
-            essential today and in near future.`,
-      src: `/courses/python.png`,
-      alt: `python`,
-      vwidth: 1024,
-      vheight: 576,
+      bLink: "/courses/python",
     },
   ];
 
@@ -66,7 +46,7 @@ export default function Home() {
                   alt={value.alt}
                   iwidth={value.vwidth}
                   iheight={value.vheight}
-                  bLink="/"
+                  bLink={value.bLink}
                   key={value.id}
                 />
               );

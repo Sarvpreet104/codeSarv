@@ -28,20 +28,24 @@ body {
   @apply w-full lg:w-[70%] px-4 mx-auto;
 }
 
+pre {
+  @apply text-base lg:text-lg font-semibold p-4 rounded-lg;
+}
+
 section {
   @apply my-10;
 }
 
 h1 {
-  @apply text-4xl md:text-5xl lg:text-6xl font-bold my-8;
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold mt-8 mb-4;
 }
 
 h2 {
-  @apply text-3xl md:text-4xl lg:text-5xl font-bold my-6;
+  @apply text-3xl md:text-3xl lg:text-4xl font-bold mt-6 mb-3;
 }
 
-.heading3 {
-  @apply text-2xl font-semibold my-4;
+h3 {
+  @apply text-2xl font-semibold mt-4 mb-2;
 }
 
 p {
@@ -52,8 +56,16 @@ p {
   @apply text-base my-0;
 }
 
+ul {
+  @apply list-inside pl-4 text-base lg:text-lg list-disc;
+}
+
+ol {
+  @apply list-inside pl-4 text-base lg:text-lg list-decimal;
+}
+
 .myList {
-  @apply list-inside pl-4 text-base lg:text-lg;
+  @apply list-none pl-0 text-base lg:text-lg;
 }
 
 .myList li span {

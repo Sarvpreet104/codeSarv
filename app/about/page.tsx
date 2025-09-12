@@ -1,6 +1,6 @@
-import SocialCard from "@/app/ui/SocialCard";
-import ContactCard from "@/app/ui/ContactCard";
-import NewsFlex from "@/app/ui/NewsFlex";
+import SocialCard from "@/components/SocialCard";
+import ContactCard from "@/components/ContactCard";
+import NewsFlex from "@/components/NewsFlex";
 
 const page = () => {
   return (
@@ -68,7 +68,7 @@ const page = () => {
           content={
             <div>
               <p>On this platform, we provide our dear students:</p>
-              <ul className="myList list-[var(--check-list)]">
+              <ul className="list-[var(--check-list)]">
                 <li>
                   <span>A proper learning structure to follow.</span>
                 </li>

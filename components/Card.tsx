@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PrimaryButton from "@/app/ui/PrimaryButton";
+import PrimaryButton from "./PrimaryButton";
 
 interface CardProps {
   title: string;

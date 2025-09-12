@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { newLinkBtn } from "@/app/lib/utils";
+import { newLinkBtn } from "@/libs/utils";
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
-  const products = [{ name: "Courses", path: "/" }];
+  const products = [{ name: "Courses", path: "/courses" }];
 
   const resources = [
     { name: "Privacy", path: "/privacy" },
@@ -38,7 +38,7 @@ const Footer = () => {
           {/* Products */}
           <div className="flex flex-col gap-2">
             <div className="font-semibold text-lg">Products</div>
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col gap-1 myList">
               {products.map((value) => {
                 return (
                   <li key={value.name}>
@@ -57,7 +57,7 @@ const Footer = () => {
           {/* Resources */}
           <div className="flex flex-col gap-2">
             <div className="font-semibold text-lg">Resources</div>
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col gap-1 myList">
               {resources.map((value) => {
                 return (
                   <li key={value.name}>
