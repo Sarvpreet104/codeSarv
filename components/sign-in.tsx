@@ -1,5 +1,4 @@
 "use client";
-import { signIn } from "@/auth";
 
 import { signInGithub } from "@/libs/actions/auth";
 

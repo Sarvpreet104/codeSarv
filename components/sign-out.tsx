@@ -1,5 +1,4 @@
 "use client";
-import { signOut } from "@/auth";
 
 import { signOutUser } from "@/libs/actions/auth";
 
