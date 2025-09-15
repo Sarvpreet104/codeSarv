@@ -1,4 +1,15 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service - codeSarv",
+  description:
+    "Read the Terms of Service for codeSarv. Understand your rights and responsibilities when using our website and services.",
+  robots: {
+    index: false, // noindex
+    follow: true, // links can still be followed
+  },
+};
 
 const page = () => {
   return (

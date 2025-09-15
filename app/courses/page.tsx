@@ -1,4 +1,11 @@
 import Card from "@/components/Card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Courses - codeSarv",
+  description:
+    "Explore our range of free coding courses at codeSarv. Our courses are designed for beginners and advanced learners alike. Start your coding journey today!",
+};
 
 const page = () => {
   const courses = [

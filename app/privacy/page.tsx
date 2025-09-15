@@ -1,4 +1,15 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - codeSarv",
+  description:
+    "Learn how codeSarv collects, uses, and protects your data. Our Privacy Policy outlines your rights and our commitment to your privacy.",
+  robots: {
+    index: false, // noindex
+    follow: true, // links can still be followed
+  },
+};
 
 const page = () => {
   return (

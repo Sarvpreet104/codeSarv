@@ -29,7 +29,7 @@ body {
 }
 
 pre {
-  @apply text-base lg:text-lg font-semibold p-4 rounded-lg;
+  @apply text-base lg:text-lg font-semibold p-4 rounded-lg whitespace-pre overflow-x-auto my-4;
 }
 
 section {

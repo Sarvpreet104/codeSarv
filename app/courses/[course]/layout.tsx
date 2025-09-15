@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import CourseSidebar from "@/components/CourseSidebar";
+import matter from "gray-matter";
 
 export default async function CourseLayout({
   children,
@@ -28,12 +29,25 @@ export default async function CourseLayout({
   const lessons = fs
     .readdirSync(lessonsDir)
     .filter((file) => file.endsWith(".md"))
-    .sort();
+    .map((file) => {
+      const filePath = path.join(lessonsDir, file);
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const { data } = matter(fileContent);
+
+      return {
+        slug: file.replace(".md", ""),
+        title: data.title || file.replace(".md", ""), // fallback if no title
+        order: data.order ?? 9999, // fallback if no order
+      };
+    })
+    .sort((a, b) => a.order - b.order);
 
   return (
-    <div className="flex myContainer min-h-[80vh]">
-      <CourseSidebar course={course} lessons={lessons} />
-      <main className="flex-1 pl-0 lg:pl-8">{children}</main>
+    <div className="flex gap-8 myContainer min-h-[80vh]">
+      <div className="lg:max-h-[88vh] lg:sticky lg:top-26 lg:left-0">
+        <CourseSidebar course={course} lessons={lessons} />
+      </div>
+      <div className="flex-1 overflow-hidden">{children}</div>
     </div>
   );
 }

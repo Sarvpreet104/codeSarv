@@ -30,4 +30,7 @@ print("Hello, World!")
 # printing a variable
 a = "Sarv"
 print(a)
+
+description:
+    "Discover the story behind codeSarv. Learn about our mission to provide free, high-quality coding education and how we aim to empower aspiring developers worldwide.",
 ```

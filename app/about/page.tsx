@@ -1,6 +1,13 @@
 import SocialCard from "@/components/SocialCard";
 import ContactCard from "@/components/ContactCard";
 import NewsFlex from "@/components/NewsFlex";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - codeSarv",
+  description:
+    "Discover the story behind codeSarv. Learn about our mission to provide free, high-quality coding education and how we aim to empower aspiring developers worldwide.",
+};
 
 const page = () => {
   return (

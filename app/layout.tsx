@@ -8,7 +8,7 @@ import { auth } from "@/auth";
 export const metadata: Metadata = {
   title: "codeSarv - Grow your skills with codeSarv",
   description:
-    "codeSarv is a platform to learn coding and development. And the best part is it's totally free. So, don't wait just join.",
+    "codeSarv is a platform to learn coding and development. And the best part is it's totally free. So don't wait, just join.",
 };
 
 export default async function RootLayout({

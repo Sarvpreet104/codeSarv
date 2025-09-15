@@ -1,5 +1,12 @@
 import SocialCard from "@/components/SocialCard";
 import PrimaryButton from "@/components/PrimaryButton";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - codeSarv",
+  description:
+    "Get in touch with the codeSarv team. Whether you have questions, feedback, or need support, we're here to help. Contact us today!",
+};
 
 const page = () => {
   return (
