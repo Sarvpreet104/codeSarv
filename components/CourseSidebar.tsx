@@ -34,7 +34,7 @@ export default function CourseSidebar({
           {course.toUpperCase()}
         </h3>
 
-        {lessons.map(({ slug, title }) => {
+        {lessons.map(({ slug }) => {
           const href = `/courses/${course}/lessons/${slug}`;
 
           // ✅ true if the current path starts with the lesson URL
