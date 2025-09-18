@@ -1,3 +1,4 @@
+// app/courses/[course]/layout.tsx
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
@@ -9,9 +10,9 @@ export default async function CourseLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ course: string }>;
+  params: { course: string }; // no Promise needed
 }) {
-  const { course } = await params; // ✅ Await params
+  const { course } = await params;
 
   const lessonsDir = path.join(
     process.cwd(),
@@ -23,7 +24,6 @@ export default async function CourseLayout({
 
   if (!fs.existsSync(lessonsDir)) {
     notFound();
-    return;
   }
 
   const lessons = fs
@@ -36,18 +36,21 @@ export default async function CourseLayout({
 
       return {
         slug: file.replace(".md", ""),
-        title: data.title || file.replace(".md", ""), // fallback if no title
-        order: data.order ?? 9999, // fallback if no order
+        title: data.title || file.replace(".md", ""),
+        order: data.order ?? 9999,
       };
     })
     .sort((a, b) => a.order - b.order);
 
   return (
-    <div className="flex gap-8 myContainer min-h-[80vh]">
-      <div className="lg:max-h-[88vh] lg:sticky lg:top-26 lg:left-0">
+    <section className="lg:flex gap-8 myContainer min-h-[85vh]">
+      <div className="lg:max-h-[85vh] lg:sticky lg:top-30 lg:left-0">
         <CourseSidebar course={course} lessons={lessons} />
       </div>
-      <div className="flex-1 overflow-hidden">{children}</div>
-    </div>
+
+      <main className="block lg:flex-1 overflow-hidden contentArea">
+        {children}
+      </main>
+    </section>
   );
 }

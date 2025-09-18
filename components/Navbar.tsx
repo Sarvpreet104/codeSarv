@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       {/* Top Navbar */}
       <nav
-        className={`border-2 border-[var(--border-color)] bg-[var(--ele-bg-color)]/80 w-[95%] lg:w-[70%] mx-auto my-6 rounded-full px-2 lg:px-1 py-1 sticky top-6 z-50 backdrop-blur-sm`}
+        className={`border-2 border-[var(--border-color)] bg-[var(--ele-bg-color)]/60 w-[95%] lg:w-[70%] mx-auto my-6 rounded-full px-2 lg:px-1 py-1 sticky top-6 z-50 backdrop-blur-sm`}
       >
         <div className="flex justify-between items-center">
           <Link

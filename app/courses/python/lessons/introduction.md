@@ -1,36 +1,53 @@
 ---
 title: Introduction
 description: intro to python
-author: sarv
-date: 10-09-2025
+author: Sarvpreet Singh
+date: 15-09-2025
 order: 1
 ---
 
 ## Introduction to Python
 
-Welcome to the **Python course**! 🚀  
-In this lesson, we’ll cover the basics of Python, one of the most popular programming languages in the world.
+**What is python?**
 
-## What is Python?
+Python is a programming language created by **Guido van Rossum** (in 1980s)
 
-### Python is:
+![py-creator](/courses/python/images/py-creator.jpg "Guido van Rossum")
 
-- Easy to learn
-- Beginner-friendly
-- Powerful and versatile
-- Used in **web development**, **AI**, **data science**, and **automation**
+In one sentence - "It's a simple to learn and powerful programming language."
+It gives you so much powers right at your finger tips.
 
-## Your First Python Program
+## What powers you get:
 
-Here’s how you print something in Python:
+**With Python you can:**
 
-```python
-print("Hello, World!")
+- Make websites
+- Write softwares
+- Make Artificial Intelligence (or AI)
 
-# printing a variable
-a = "Sarv"
-print(a)
+It is also used in **data science**, **machine learning** (or ML), **cloud computing**, and **automation**.
 
-description:
-    "Discover the story behind codeSarv. Learn about our mission to provide free, high-quality coding education and how we aim to empower aspiring developers worldwide.",
-```
+## Why Python?
+
+![py-creator](/courses/python.png)
+
+Python is very beloved language due to what it provides. This makes it so demanding in many fields today.
+
+### G.O.A.T. Companies that use Python:
+
+Many very great companies like: **Facebook**, **Amazone**, **Netflix**, **Google**, **IBM**, and **NASA**, hire skilled programmers who use python.
+
+You can see, learing python enables so many great career opportunities.
+
+## What you will learn
+
+In this "Python for absolute beginners" course - by codeSarv, you will learn:
+
+- **Core Python** - Which is the backbone of a programming Language (Python here)
+- **OOPs** - Object Oriented Programming (OOPs in short) which makes everything structured and organized.
+- **Advance Python** - Some advance concepts which makes you more skilled than others. Made easy, of-courese.
+- **Testing and Debugging** - Which makes your program bug free and production ready.
+
+### \*Download PDF for full syllabus:
+
+[📥 Download Full Syllabus (PDF)](/courses/python/matter/python_syllabus.pdf)
