@@ -10,9 +10,9 @@ export default async function CourseLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { course: string }; // no Promise needed
+  params: Promise<{ course: string }>;
 }) {
-  const { course } = await Promise.resolve(params);
+  const { course } = await params;
 
   const lessonsDir = path.join(
     process.cwd(),
