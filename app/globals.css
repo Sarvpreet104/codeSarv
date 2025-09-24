@@ -93,6 +93,14 @@ ol {
   @apply text-base lg:text-lg text-[var(--accent-color)] hover:underline;
 }
 
+.contentArea strong {
+  @apply bg-[var(--ele-bg-color)] border-2 border-[var(--border-color)] rounded-lg px-2;
+}
+
+.contentArea li {
+  @apply my-2;
+}
+
 @layer base {
   /* all images that come from markdown */
   .prose img {

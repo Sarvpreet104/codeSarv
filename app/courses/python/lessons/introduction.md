@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: intro to python
+description: Introduction to python programming.
 author: Sarvpreet Singh
 date: 15-09-2025
 order: 1
@@ -8,7 +8,7 @@ order: 1
 
 ## Introduction to Python
 
-**What is python?**
+### What is python?
 
 Python is a programming language created by **Guido van Rossum** (in 1980s)
 
@@ -19,7 +19,7 @@ It gives you so much powers right at your finger tips.
 
 ## What powers you get:
 
-**With Python you can:**
+### With Python you can:
 
 - Make websites
 - Write softwares
@@ -29,7 +29,7 @@ It is also used in **data science**, **machine learning** (or ML), **cloud compu
 
 ## Why Python?
 
-![py-creator](/courses/python.png)
+![python](/courses/python.png)
 
 Python is very beloved language due to what it provides. This makes it so demanding in many fields today.
 

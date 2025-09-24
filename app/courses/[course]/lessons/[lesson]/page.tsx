@@ -38,7 +38,7 @@ export default async function LessonPage(props: {
 
   return (
     <>
-      <div className="pl-4 py-2 mt-4 border-l-10 border-[var(--accent-color)] bg-[var(--ele-bg-color)] rounded-r-lg">
+      <div className="px-4 py-2 mt-4 border-l-10 border-[var(--accent-color)] bg-[var(--ele-bg-color)] rounded-r-lg">
         <h1>{data.title}</h1>
         <p className="subP italic">&quot;{data.description}&quot;</p>
 
