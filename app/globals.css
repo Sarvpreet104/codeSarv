@@ -78,15 +78,15 @@ ol {
 }
 
 .contentArea h2 {
-  @apply text-3xl lg:text-4xl font-bold my-6;
+  @apply text-3xl lg:text-4xl font-bold my-8;
 }
 
 .contentArea h3 {
-  @apply text-2xl font-bold my-4;
+  @apply text-2xl font-bold my-6;
 }
 
 .contentArea p {
-  @apply text-base lg:text-lg my-2;
+  @apply text-base lg:text-lg/8 my-2;
 }
 
 .contentArea a {
@@ -94,7 +94,7 @@ ol {
 }
 
 .contentArea strong {
-  @apply bg-[var(--ele-bg-color)] border-2 border-[var(--border-color)] rounded-lg px-2;
+  @apply bg-[var(--ele-bg-color)] border-2 border-[var(--border-color)] rounded-lg p-1;
 }
 
 .contentArea li {
